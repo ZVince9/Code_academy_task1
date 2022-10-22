@@ -1,0 +1,165 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Pale blue: hsl(225, 100%, 94%)
+- Bright blue: hsl(245, 75%, 52%)
+
+### Neutral
+
+- Very pale blue: hsl(225, 100%, 98%)
+- Desaturated blue: hsl(224, 23%, 55%)
+- Dark blue: hsl(223, 47%, 23%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 16px
+
+### Font
+
+- Family: [Red Hat Display](https://fonts.google.com/specimen/Red+Hat+Display)
+- Weights: 500, 700, 900 */
+
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("pattern-background-desktop.svg");
+  background-color: hsl(225, 100%, 94%);
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-family: "Red Hat Display";
+}
+
+.container {
+  display: flex;
+  height: 50rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15rem;
+}
+
+.card {
+  min-width: 25rem;
+  min-height: 35rem;
+  border-radius: 2rem;
+  background-color: rgba(255, 255, 255, 0.678);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(132, 140, 255, 0.3) 0px 30px 60px -30px;
+}
+
+.card-image {
+  border-top-right-radius: 2rem;
+  border-top-left-radius: 2rem;
+  background-image: url("illustration-hero.svg");
+  height: 13rem;
+}
+
+.card-heading {
+  font-weight: 700;
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.card-paragraph {
+  display: flex;
+  width: 25rem;
+  height: 8rem;
+  justify-content: center;
+  align-content: center;
+  padding: 1.5rem;
+}
+
+.card-text {
+  text-align: center;
+  font-size: 16px;
+  word-spacing: 1px;
+  color: hsl(224, 23%, 55%);
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.card_plan-space {
+  display: flex;
+  width: 80%;
+  height: 6rem;
+  background-color: hsl(224, 100%, 97%);
+  padding: 1.5rem;
+  margin: 0 auto;
+  border-radius: 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card_plan-details {
+  margin-right: 2rem;
+  font-weight: 700;
+}
+
+.card_plan-image {
+  background-color: hsl(225, 100%, 86%);
+  border-radius: 4rem;
+}
+
+.card_plan {
+  background-color: violet;
+}
+
+.card_plan-price {
+  color: hsl(224, 23%, 55%);
+}
+
+.container_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
+  flex-direction: column;
+}
+
+.btn {
+  width: 80%;
+  padding: 1rem;
+  border-radius: 1rem;
+  border-style: none;
+  font-weight: 900;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn_payment {
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+}
+
+.btn_cancel {
+  background-color: transparent;
+  margin-top: 1rem;
+  color: hsl(224, 23%, 55%);
+}
+
+/* ================================ */
+/* Modifiers */
+/* ================================ */
+
+.btn--shadow {
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
